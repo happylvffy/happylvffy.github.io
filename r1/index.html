@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>이마트 트레이더스</title>
+<meta>
+<!-- 뷰포트 / 익스최신버전 /검색어관련/ 쇼컷(파비콘) /바로가기아이콘 /익스낮은버전 -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+<meta name="keywords" content="이마트,이마트트레이더스,마트,식품">
+<meta name="Description" content="거품을 없앤 가격이 이 안에 있습니다">
+<link rel="shortcut icon" href="./images/fabicon.png" type="image/x-icon">
+<link rel="icon" sizes="16x16 32x32 48x48 64x64 72x72 96x96 114x114 128x128" href="./images/fabicon.png" type="image/x-icon">
+<link rel="apple-touch-icon-precomposed" href="./images/fabicon.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileColor" content="./images/fabicon.png">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="./script.js"></script>
+<style>
+@media screen and (max-width:767px) { 
+    /* 모바일 */
+    /*.shopMenu { column-count:2; }*/
+    .shopMenu.wrap li { width:30%; }
+    .mo { display:block; }
+    .desk { display:none; }
+    .wrap{ width:100%; }
+    #hd, #hd .hdTop { height:60px; }
+    .logo { width:94px; height:auto; left:calc(100% - 100px); }
+    .search { top: -15px; width: 33px; height: 33px; right: -80px; }
+    #vs, #vs ul { height:100%; }
+    #vs .vs img { display:none; }
+    #vs .vs1 { background:url(./images/mo_vs01.jpg); background-size:contain; background-repeat:no-repeat; }
+    #vs .vs2 { background:url(./images/mo_vs02.jpg); background-size:contain; background-repeat:no-repeat; }
+    #vs .vs3 { background:url(./images/mo_vs03.jpg); background-size:contain; background-repeat:no-repeat; }
+    #vs .vs4 { background:url(./images/mo_vs04.jpg); background-size:contain; background-repeat:no-repeat; }
+    .page .secTit { width:100%; margin-left:-20px; }
+    .shopMenu { padding: 10px 10px; height: 510px; }
+    .bn img { display:none; }
+    .bn { clear:both; background:url("./images/bn_top_m.png") no-repeat; background-size:100%; }
+    .proFrame { width:70%; }
+    .proFrame ul li { width: 48%; }
+    #shopping { height:auto; }
+    .eventBox { box-sizing:border-box; height:1230px; }
+    .eventBox.wrap li { width:48%; float:left; }
+    .eventBox.wrap li img { width:100%; }
+    .eventTit { font-size:0.9em; }
+    .eventCom { font-size:0.7em; }
+    .thema { height:646px; background:none; }
+    .themaMenu { padding:0px; }
+    .themaMenu li { width:50%; }
+    .themaMenu li img { width:100%; }
+    .ft { position:relative; }
+    .familyapp { width:auto; padding:0; margin-top: 30px; }
+    .familyapp li { float:left; width:17.5%; padding:6px 4px; }
+    .ftmenu { width:auto; position: absolute; top:-20px; }
+    .ftmenu .left { width:auto; }
+    .ftmenu .left li a { font-size: 0.75em; }
+    .ftinfo { height: 220px; }
+    .ftinfo .left { width:auto; padding:0; }
+    .ftinfo .right { width:auto; float:none; }
+    .ftinfo .left span { font-size: 1em; }
+    .ftinfo .left p, .ftinfo .right p { font-size: 0.6em; margin:0; }
+    .familysite { position:absolute; top:184px; right:20px; }
+}
+@media screen and (min-width:768px) and (max-width:959px) {
+    /* 태블릿 */
+    /*.shopMenu { column-count:3; }*/
+    .shopMenu.wrap li { width:18.8%; }
+    .mo { display:block; }
+    .desk { display:none; }
+    .wrap{ width:100%; }
+    .menu { top:33px; left:30px; }
+    .page .secTit { width:100%; margin-left:-20px; }
+    #vs li { background-size:contain; }
+    .bn img { display:none; }
+    .bn { clear:both; background:url(./images/bn_top.png) ; background-size:contain; background-repeat:no-repeat; }
+}
+@media screen and (min-width:960px) and (max-width:1280px) {
+    /* 저해상도 데스크탑 */
+    /*.shopMenu { column-count:5; }*/
+    .mo { display:none; }
+    .desk { display:block; }
+}
+@media screen and (min-width:1281px) {
+    /* 고해상도 데스크탑 */
+    /*.shopMenu { column-count:5; }*/
+    .mo { display:none; }
+    .desk { display:block; }
+}
+</style>
+</head>
+<body>
+<div class="tradersWrap">
+<header id="hd">
+    <div class="hdTop">
+       <div class="top wrap">
+           <a href="./index.html" class="logo"><img src="./images/logo.png" alt=""></a>
+        <nav id="top" class="right">
+            <ul class="desk">
+                <li><a href=""><img src="./images/login.png" alt=""></a></li>
+                <li><a href=""><img src="./images/cart.png" alt=""></a></li>
+                <li><a href=""><img src="./images/delivery.png" alt=""></a></li>
+            </ul>
+            <a href="" class="search"><img src="./images/search.png" alt=""></a>
+        </nav>
+        <div class="menu mo"><a href=""><img src="./images/menu.png" alt=""></a></div>
+       </div>
+    </div>
+    <nav id="gnb" class="desk">
+      <div></div>
+       <div class="gnb wrap">
+        <ul>
+            <li>
+                <a href="">TRADERS</a>
+                <div id="sub">
+                   <div class="sub wrap">
+                    <h2 class="subTit">TRADERS</h2>
+                    <div class="subBox">
+                        <p class="subTxt">거품을 없앤 가격이<br>이 안에 있습니다</p>
+                        <img src="./images/subL01.png" alt="" class="subImg">
+                    </div>
+                    <ul class="subMenu">
+                        <li class="item01">
+                            <a href="">
+                                <span></span>
+                                <div><p class="subTit">과자/빵<br>건강식품</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item02"><a href=""><span></span><div><p class="subTit">생수/음료<br>커피/유제품</p></div></a></li>
+                        <li class="item03"><a href=""><span></span><div><p class="subTit">라면/통조림<br>반찬/조미료</p></div></a></li>
+                        <li class="item04"><a href=""><span></span><div><p class="subTit">과일/채소<br>쌀/정육/수산</p></div></a></li>
+                        <li class="item05"><a href=""><span></span><div><p class="subTit">화장지/세제<br>기저귀/뷰티</p></div></a></li>
+                        <li class="item06"><a href=""><span></span><div><p class="subTit">주방/가구<br>침구/공구</p></div></a></li>
+                        <li class="item07"><a href=""><span></span><div><p class="subTit">패션/잡화<br>스포츠</p></div></a></li>
+                        <li class="item08"><a href=""><span></span><div><p class="subTit">문구/사무<br>완구/동물</p></div></a></li>
+                        <li class="item09"><a href=""><span></span><div><p class="subTit">가전/<br>자동차용품</p></div></a></li>
+                    </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+                <a href="">고객센터</a>
+                <!--
+                <div class="sub">
+                    <h2 class="subTit">고객센터</h2>
+                    <div class="subBox">
+                    </div>
+                </div>-->
+            </li>
+            <li>
+                <a href="">쓱 배송시간 확인</a>
+                <!--
+                <div class="sub">
+                    <h2 class="subTit">쓱 배송시간 확인</h2>
+                    <div class="subBox">
+                    </div>
+                </div>-->
+            </li>
+            <li>
+                <a href="">쓱 배송 가능 지역 찾기</a>
+                <!--
+                <div class="sub">
+                    <h2 class="subTit">쓱 배송 가능 지역 찾기</h2>
+                    <div class="subBox">
+                    </div>
+                </div>-->
+            </li>
+            <li>
+                <a href="">점포찾기</a>
+                <!--
+                <div class="sub">
+                    <h2 class="subTit">점포찾기</h2>
+                    <div class="subBox">
+                    </div>
+                </div>-->
+            </li>
+            <li>
+                <a href="">FAMILY SITE</a>
+                <div id="sub">
+                   <div class="sub wrap">
+                    <h2 class="subTit">FAMILY SITE</h2>
+                    <div class="subBox">
+                        <p class="subTxt">백화점에서 이마트까지<br>신세계적 패밀리 사이트</p>
+                        <img src="./images/subL02.png" alt="" class="suvImg">
+                    </div>
+                    <ul class="subMenu fam">
+                        <li><a href=""><img src="./images/family01-bw.png" alt="">
+                        <div><img src="./images/family01.png" alt="" class="color"></div></a></li>
+                        <li><a href=""><img src="./images/family02-bw.png" alt=""><div><img src="./images/family02.png" alt="" class="color"></div></a></li>
+                        <li><a href=""><img src="./images/family04-bw.png" alt=""><div><img src="./images/family04.png" alt="" class="color"></div></a></li>
+                        <li><a href=""><img src="./images/family05-bw.png" alt=""><div><img src="./images/family05.png" alt="" class="color"></div></a></li>
+                        <div class="subTit2">
+                            <p>SSG</p>
+                            <p>신세계몰</p>
+                            <p>이마트몰</p>
+                            <p>샤벳</p>
+                        </div>
+                    </ul>
+                </div>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </nav>
+</header>
+<div class="" id="vs">
+    <ul>
+        <li class="vs1">
+           <div class="vs wrap">
+             <a href=""><img src="./images/vs01.jpg" alt=""></a>
+            <div class="inner">
+                <div class="vsTxt">
+                <img src="./images/vs01-1.png" alt="" class="vs-1">
+                <img src="./images/vs01-2.png" alt="" class="vs-2">
+                </div>
+            </div>  
+           </div>
+        </li>
+        <li class="vs2">
+           <div class="vs wrap">
+            <a href=""><img src="./images/vs02.jpg" alt=""></a>
+            <div class="inner">
+                <div class="vsTxt">
+                <img src="./images/vs02-1.png" alt="" class="vs-1">
+                <img src="./images/vs02-2.png" alt="" class="vs-2">
+                </div>
+            </div>
+          </div>
+        </li>
+        <li class="vs3">
+           <div class="vs wrap">
+            <a href=""><img src="./images/vs03.jpg" alt=""></a>
+            <div class="inner">
+                <div class="vsTxt">
+                <img src="./images/vs03-1.png" alt="" class="vs-1">
+                <img src="./images/vs03-2.png" alt="" class="vs-2">
+                </div>
+            </div>
+          </div>
+        </li>
+        <li class="vs4">
+          <div class="vs wrap">
+            <a href=""><img src="./images/vs04.jpg" alt="" ></a>
+            <div class="inner">
+                <div class="vsTxt">
+                <img src="./images/vs04-1.png" alt="" class="vs-1">
+                <img src="./images/vs04-2.png" alt=""class="vs-2">
+                </div>
+            </div>
+          </div>
+        </li>
+    </ul>
+</div>
+<section id="shopping" class="page">
+    <div class="secTit">
+        <h2>쇼핑바로가기</h2>
+        <p>실시간 베스트10</p>
+    </div>
+    <div class="shopMenu wrap">
+       <ul>
+        <li class="item01">
+            <a href="">
+                <span></span>
+                <p>과자/빵</p>
+            </a></li>
+        <li class="item02"><a href="">
+                <span></span>
+                <p>생수/음료</p>
+            </a></li>
+        <li class="item03"><a href="">
+                <span></span>
+                <p>라면/반찬</p>
+            </a></li>
+        <li class="item04"><a href="">
+                <span></span>
+                <p>과일/정육</p>
+            </a></li>
+        <li class="item05"><a href="">
+                <span></span>
+                <p>화장지/세제</p>
+            </a></li>
+        <li class="item06"><a href="">
+                <span></span>
+                <p>주방/가구</p>
+            </a></li>
+        <li class="item07"><a href="">
+                <span></span>
+                <p>패션/잡화</p>
+            </a></li>
+        <li class="item08"><a href="">
+                <span></span>
+                <p>문구/사무</p>
+            </a></li>
+        <li class="item09"><a href="">
+                <span></span>
+                <p>가전/용품</p>
+            </a></li>
+        <li class="item10"><a href="">
+                <span></span>
+                <p></p>
+            </a></li>
+      </ul>
+    </div>
+    <div class="bn">
+        <a href=""><img src="./images/bn_top.png" alt=""></a>
+    </div>
+    <div class="pro wrap">
+      <div class="proFrame">
+        <ul>
+            <li><a href="">
+                    <img src="./images/best01.jpg" alt="">
+                    <div>
+                        <p class="proTit">믿고먹는우리쌀 20kg</p>
+                        <span class="proPrice">51,480</span>
+                        <span class="won">원</span>
+                        <p>(100g 당 : 258 원)</p>
+                    </div>
+                </a></li>
+            <li><a href="">
+                    <img src="./images/best02.jpg" alt="">
+                    <div>
+                    <p class="proTit">TR)도드람 국내산 냉장삼겹살(100g)</p>
+                    <span class="proPrice">1,880</span>
+                    <span class="won">원</span>
+                    <p>(100g 당 : 1,880 원)</p>
+                    </div>
+                </a></li>
+            <li><a href="">
+                    <img src="./images/best03.jpg" alt="">
+                    <div>
+                    <p class="proTit">E-MART FRESH 호주산 냉동 오이스터블레이드(RP)</p>
+                    <span class="proPrice">1,180</span>
+                    <span class="won">원</span>
+                    </div>
+                </a></li>
+            <li><a href="">
+                    <img src="./images/best04.jpg" alt="">
+                    <div>
+                    <p class="proTit">맥심 카누 마일드 미니 0.9g×160입</p>
+                    <span class="proPrice">24,080</span>
+                    <span class="won">원</span>
+                    <p>(10g 당 : 1,673 원)</p>
+                    </div>
+                </a></li>
+            <li><a href="">
+                    <img src="./images/best05.jpg" alt="">
+                    <div>
+                    <p class="proTit">국내산 1등급 도드람 목심(100g)</p>
+                    <span class="proPrice">2,080</span>
+                    <span class="won">원</span>
+                    <p>(100g 당 : 2,080 원)</p>
+                    </div>
+                </a></li>
+            <li><a href="">
+                    <img src="./images/best06.jpg" alt="">
+                    <div>
+                    <p class="proTit">맥심 화이트골드 11.7g×365입</p>
+                    <span class="proPrice">36,380</span>
+                    <span class="won">원</span>
+                    <p>(10g 당 : 86 원)</p>
+                    </div>
+                </a></li>
+            <li><a href="">
+                    <img src="./images/best07.jpg" alt="">
+                    <div>
+                    <p class="proTit">CJ제일제당 햇반 아산맑은쌀밥 210g×12입</p>
+                    <span class="proPrice">10,280</span>
+                    <span class="won">원</span>
+                    </div>
+                </a></li>
+            <li><a href="">
+                    <img src="./images/best08.jpg" alt="">
+                    <div>
+                    <p class="proTit">하리보 골드베렌 젤리 980g</p>
+                    <span class="proPrice">8,980</span>
+                    <span class="won">원</span>
+                    <p>(10g 당 : 92 원)</p>
+                    </div>
+                </a></li>
+            <li><a href="">
+                    <img src="./images/best09.jpg" alt="">
+                    <div>
+                    <p class="proTit">트와이닝 얼그레이 티 2g×100입</p>
+                    <span class="proPrice">16,980</span>
+                    <span class="won">원</span>
+                    <p>(10g 당 : 849 원)</p>
+                    </div>
+                </a></li>
+            <li><a href="">
+                    <img src="./images/best10.jpg" alt="">
+                    <div>
+                    <p class="proTit">롯데 카스타드 23g×30입</p>
+                    <span class="proPrice">7,980</span>
+                    <span class="won">원</span>
+                    <p>(10g 당 : 116 원)</p>
+                    </div>
+                </a></li>
+        </ul>
+        <div class="left prev"><a href=""><img src="./images/prev.png" alt=""></a></div>
+        <div class="right next"><a href=""><img src="./images/next.png" alt=""></a></div>
+    </div>
+  </div>
+</section>
+<section id="event" class="page">
+    <div class="secTit">
+        <h2>이벤트</h2>
+        <p>카드혜택&amp;이벤트</p>
+    </div>
+    <ul class="eventBox wrap">
+        <li><a href="">
+                <img src="./images/event09.jpg" alt="">
+                <div class="eventTxt">
+                    <span class="eventDate">2018.10.02 - 2018.12.31</span>
+                    <h5 class="eventTit">SSGPAY카드 첫결제</h5>
+                    <p class="eventCom">최대 30%캐시백</p>
+                </div>
+            </a>
+        </li>
+        <li><a href="">
+                <img src="./images/event10.jpg" alt="">
+                <div class="eventTxt">
+                    <span class="eventDate">2018.10.01 - 2018.10.31</span>
+                    <h5 class="eventTit">프리미엄 상품평</h5>
+                    <p class="eventCom">프리미엄리뷰 혜택</p>
+                </div>
+            </a>
+        </li>
+        <li><a href="">
+                <img src="./images/event01.jpg" alt="">
+                <div class="eventTxt">
+                    <span class="eventDate">2018.09.08 - 2018.11.30</span>
+                    <h5 class="eventTit">SSG.COM 첫구매 혜택</h5>
+                    <p class="eventCom">첫구매고객 ~1만원 할인쿠폰</p>
+                </div>
+            </a>
+        </li>
+        <li><a href="">
+                <img src="./images/event02.jpg" alt="">
+                <div class="eventTxt">
+                    <span class="eventDate">2018.10.01 - 2018.10.02</span>
+                    <h5 class="eventTit">KB국민카드</h5>
+                    <p class="eventCom">7만원이상 결제 시 5% 청구할인</p>
+                </div>
+            </a>
+        </li>
+        <li><a href="">
+                <img src="./images/event03.jpg" alt="">
+                <div class="eventTxt">
+                    <span class="eventDate">2018.05.16 - 2020.12.31</span>
+                    <h5 class="eventTit">쓱배송굿모닝</h5>
+                    <p class="eventCom">오후6시까지주문<br>오전6시부터배송</p>
+                </div>
+            </a>
+        </li>
+        <li><a href="">
+                <img src="./images/event04.jpg" alt="">
+                <div class="eventTxt">
+                    <span class="eventDate">2018.07.03 - 2018.12.31</span>
+                    <h5 class="eventTit">RED SSG CLUB 안내</h5>
+                    <p class="eventCom">SSG.COM VIP 그대로<br>신세계백화점 4대 혜택 쓱-</p>
+                </div>
+            </a>
+        </li>
+        <li><a href="">
+                <img src="./images/event08.jpg" alt="">
+                <div class="eventTxt">
+                    <span class="eventDate">2017.01.26 - 2018.12.31</span>
+                    <h5 class="eventTit">쓱-배송 주문더하기</h5>
+                    <p class="eventCom">빠뜨린 상품이 있을때 손쉽게!<br>추가한 상품은 배송비가 무료!!</p>
+                </div>
+            </a>
+        </li>
+        <li><a href="">
+                <img src="./images/event06.jpg" alt="">
+                <div class="eventTxt">
+                    <span class="eventDate">2018.10.01 - 2018.10.31</span>
+                    <h5 class="eventTit">10월 프리미엄 상품평</h5>
+                    <p class="eventCom">상품평쓰고 s머니 5만원 받자!</p>
+                </div>
+            </a>
+        </li>
+        <li><a href="">
+                <img src="./images/event07.jpg" alt="">
+                <div class="eventTxt">
+                    <span class="eventDate">2018.01.02 - 2018.12.31</span>
+                    <h5 class="eventTit">현대카드 슈퍼클럽</h5>
+                    <p class="eventCom">SSG.COM 구매시 2배적립</p>
+                </div>
+            </a>
+        </li>
+        <li><a href="">
+                <img src="./images/event05.jpg" alt="">
+                <div class="eventTxt">
+                    <span class="eventDate">2018.07.19 - 2019.12.31</span>
+                    <h5 class="eventTit">신세계제휴카드전용</h5>
+                    <p class="eventCom">5% 더블쿠폰 받으세요</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</section>
+<section id="thema" class="page">
+    <div class="secTit">
+        <h2>테마쇼핑</h2>
+        <p>TRADERS ONLY</p>
+    </div>
+    <div class="thema">
+    <ul class="themaMenu wrap">
+        <li><a href="">
+                <img src="./images/thema01.jpg" alt="">
+            </a></li>
+        <li><a href="">
+                <img src="./images/thema02.jpg" alt="">
+            </a></li>
+        <li><a href="">
+                <img src="./images/thema03.jpg" alt="">
+            </a></li>
+        <li><a href="">
+                <img src="./images/thema04.jpg" alt="">
+            </a></li>
+        <li><a href="">
+                <img src="./images/thema05.jpg" alt="">
+            </a></li>
+        <li class="mo"><a href="">
+                <img src="./images/thema06.jpg" alt="">
+            </a></li>
+    </ul>
+    </div>
+</section>
+<footer id="ft">
+  <div class="ftTop">
+   <div class="ft wrap">
+    <div class="familyapp">
+        <ul>
+            <li><a href=""><img src="./images/family01.png" alt=""><img src="" alt=""></a></li>
+            <li><a href=""><img src="./images/family02.png" alt=""><img src="" alt=""></a></li>
+            <li><a href=""><img src="./images/family03.png" alt=""><img src="" alt=""></a></li>
+            <li><a href=""><img src="./images/family04.png" alt=""><img src="" alt=""></a></li>
+            <li><a href=""><img src="./images/family05.png" alt=""><img src="" alt=""></a></li>
+        </ul>
+    </div>
+    <ul class="ftmenu">
+        <li class="left">
+            <ul>
+                <li><a href="">회사소개</a></li>
+                <li><a href="">개인정보처리방침</a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">이마트입점상담</a></li>
+            </ul>
+        </li>
+        <li class="right">
+            <select name="" id="" class="familysite">
+                <option value="">신세계백화점</option>
+                <option value="">이마트</option>
+                <option value="">이마트 트레이더스</option>
+                <option value="">이마트 에브리데이</option>
+                <option value="">이마트24</option>
+                <option value="">신세계TV쇼핑</option>
+                <option value="">프리미엄아울렛</option>
+                <option value="">스타필드</option>
+                <option value="">신세계면세점(명동)</option>
+                <option value="">신세계면세점(부산)</option>
+                <option value="">신세계인터내셔날</option>
+                <option value="" selected>FAMILY SITE</option>
+            </select>
+        </li>
+    </ul>
+   </div>
+  </div>
+    <div class="ftinfo wrap">
+        <ul>
+            <li class="left">
+                <span>(주) 이마트 이마트몰</span>
+                <p>대표자: 이갑수 서울시 성동구 뚝섬로 377 (성수동2가) 이마트매장: 02-380-5678<br>    사업자등록번호: 206-86-50913 통신판매업 신고번호: 제 2011-서울성동-0345호</p>
+                <div class="st">
+                    <span class="tel">고객센터 </span>
+                    <p class="tel"> 1577-3419</p>
+                    <p>호스팅서비스 사업자 : (주) 이마트</p>
+                </div>
+            </li>
+            <li class="right">
+                <p>이마트몰: 서울특별시 중구 남대문시장10길 2 사업자등록번호: 206-86-50913<br>
+                통신판매업 신고번호: 제 2012-서울중구-1323호<br>
+                개인정보보호책임자: 강영태 소비자피해보상보험 SGI 서울보증<br>
+                Fax: 02-863-3803 emart@emartmall.com</p>
+            </li>
+        </ul>
+    </div>
+</footer>
+</div>
+</body>
+</html>
