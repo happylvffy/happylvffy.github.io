@@ -1,0 +1,311 @@
+@charset "utf-8";
+/*비쥬얼슬라이드*/
+.slide {
+    width:100%;
+    height:auto;
+    min-height:100%;
+    position:relative;
+}
+.mainSlider {
+    width:100%;
+    height:520px;
+}
+.imgFrame {
+    width:400%;
+    height:720px;
+}
+.mainSlider .imgFrame li {
+    float:left;
+    width:25%;
+    height:100%;
+    margin-top:-85px;
+    transition:0.8s;
+    opacity:0.5;
+}
+.imgFrame .img1 { 
+    background-image: url("./images/sl_01.jpg")
+}
+.imgFrame .img2 { 
+    background-image: url("./images/sl_04.jpg")
+}
+.imgFrame .img3 { 
+    background-image: url("./images/sl_05.jpg")
+}
+.imgFrame .img4 { 
+    background-image: url("./images/sl_06.jpg")
+}
+.sliderFrame {
+    width:400%;
+    height:auto;
+    z-index:20;
+    position:absolute;
+    top:35%;
+}
+.sliderFrame li {
+    width:25%;
+    height:100px;
+    float:left;
+    position:relative;
+}
+.sliderFrame label {
+    position:absolute;
+    top:50%;
+    display:block;
+    width:60px;
+    height:60px;
+    overflow-x:hidden;
+    text-indent:-999px;
+    cursor:pointer;
+    z-index:19;
+    font-size:0;
+}
+.slBtn_left {
+    background-image: url(./images/left.png);
+    left:50px;
+}
+.slBtn_right {
+    background-image: url(./images/right.png);
+    right: 50px;
+}
+.sliderNumFrame {
+    position:absolute;
+    top:40%;
+    right:350px;
+    z-index:20;
+}
+.sliderNumFrame li {
+    cursor:pointer;
+}
+.slNumBtn {
+    width:20px;
+    height:20px;
+    background-image:url("images/bt_off.png");
+    display:block;
+    position:relative;
+    cursor:pointer;
+}
+.raIt{
+    display:none;
+}
+#ra11:checked ~ .mainSlider .imgFrame { margin-left:0; }
+#ra12:checked ~ .mainSlider .imgFrame { margin-left:-100%;}
+#ra13:checked ~ .mainSlider .imgFrame { margin-left:-200%;}
+#ra14:checked ~ .mainSlider .imgFrame { margin-left:-300%;}
+#ra11:checked ~ .mainSlider .imgFrame .img1{ opacity:1;}
+#ra12:checked ~ .mainSlider .imgFrame .img2{ opacity:1;}
+#ra13:checked ~ .mainSlider .imgFrame .img3{ opacity:1;}
+#ra14:checked ~ .mainSlider .imgFrame .img4{ opacity:1;}
+
+#ra11:checked ~ .mainSlider .sliderFrame { margin-left:0; }
+#ra12:checked ~ .mainSlider .sliderFrame { margin-left:-100%;}
+#ra13:checked ~ .mainSlider .sliderFrame { margin-left:-200%;}
+#ra14:checked ~ .mainSlider .sliderFrame { margin-left:-300%;}
+
+#ra11:checked ~ .mainSlider .sliderNumFrame { margin-left:0;}
+#ra12:checked ~ .mainSlider .sliderNumFrame { margin-left:-100%;}
+#ra13:checked ~ .mainSlider .sliderNumFrame { margin-left:-200%;}
+#ra14:checked ~ .mainSlider .sliderNumFrame { margin-left:-300%;}
+#ra11:checked ~ .mainSlider .sliderNumFrame .img1 .slNumBtn { background-image:url("images/bt_on.png"); }
+#ra12:checked ~ .mainSlider .sliderNumFrame .img2 .slNumBtn  { background-image:url("images/bt_on.png"); }
+#ra13:checked ~ .mainSlider .sliderNumFrame .img3 .slNumBtn  { background-image:url("images/bt_on.png"); }
+#ra14:checked ~ .mainSlider .sliderNumFrame .img4 .slNumBtn { background-image:url("images/bt_on.png"); }
+/*그리드*/
+#page1 { 
+    z-index:1; 
+    width: 100%; 
+    height: 520px;
+}
+.gridFrame { 
+    width:960px; 
+    margin:0 auto; 
+    height:520px; 
+    position:relative; 
+}
+.gridFrame li { 
+    position:absolute; 
+    z-index:90; 
+    box-sizing:border-box; 
+    padding:35px; 
+    background-repeat:no-repeat; 
+    color:#fff;
+}
+.gridFrame .item1 { 
+    width:330px; 
+    height:300px; 
+    left:0; 
+    top:0; 
+    background-color:#b9b9b9; 
+}
+.gridFrame .item2 { 
+    width:300px; 
+    height:300px; 
+    left:330px; 
+    top:0; 
+    background-image:url("./images/itme2.jpg"); 
+    background-position:left top; 
+}
+.gridFrame .item3 { 
+    width:330px; 
+    height:520px; 
+    right:0; 
+    top:0; 
+    background-color:#ea9a99; 
+    background-image:url("./images/item3.png"); 
+    background-position:center bottom;
+}
+.gridFrame .item4 { 
+    width:630px; 
+    height:220px; 
+    left:0; 
+    bottom:0; 
+    background-color:#8390ac; 
+    background-image:url("./images/item4.png"); 
+    background-position:left top; 
+}
+.gridFrame .item4 .grdName,.gridFrame .item4 .grdTit,.gridFrame .item4 .grdMore { 
+    margin-left:300px; 
+}
+.grdName { 
+    font-size:12px; 
+    font-weight:600; 
+}
+.grdTit { 
+    padding-top:50px; 
+    font-size:20px; 
+    font-weight:600; 
+}
+.grdMore { 
+    color:#fff; 
+    font-size:14px; 
+    font-weight:600; 
+}
+/*푸터*/
+.ft { 
+clear:both; 
+width:960px; 
+margin:0 auto;
+}
+.ftWrap { 
+width:900px; 
+margin:30px auto; 
+position:relative; 
+padding-left:10px;
+}
+.fnb li { 
+float:left;  
+font-size:14px; 
+font-weight:600;
+}
+.fnb a, .fnb p { 
+color:#555; 
+}
+.fnb a:after { 
+content:"│"; 
+padding:10px; 
+color:#555;
+}
+.fnb .last a:after { 
+content:""
+}
+.fnb p { 
+clear:both; 
+padding-top:10px; 
+font-size:13px;  
+}
+/*컬랩뉴스*/
+.collapFrame { 
+position:fixed; 
+z-index:90; 
+width:100%; 
+height:100%; 
+left:-100%; 
+top:0; 
+background:rgba(0,0,0,0.4); 
+transition:0.9s;
+}
+.cnb { 
+width:960px; 
+height:430px; 
+position:absolute; 
+top:54%; 
+right:-70px; 
+border-radius:0px 25px 25px 0px; 
+background:#333; 
+}
+.cnb li { 
+float:left; 
+}
+.collapCol .wTxt { 
+text-align:left; 
+word-wrap:break-word; 
+white-space:normal; 
+display:-webkit-box; 
+-webkit-line-clamp:11; 
+-webkit-box-orient:vertical; 
+}
+.collapImgFrame { 
+width:400px;
+}
+.collapImgFrame img { 
+display:block; 
+width:100%; 
+padding:82px 40px; 
+}
+.tit { 
+font-size:20px; 
+}
+.collapTxtFrame { 
+width:340px; 
+padding:78px 78px; 
+color:#bbb; 
+}
+.closeBtn1 {
+display:block;
+width:30px;
+height:30px;
+background-size:28px;
+background:url("./images/plus.png") no-repeat;
+cursor:pointer;
+z-index:100;
+top:14%;
+left:910px;
+position:absolute;
+background-position:0px 0px;
+}
+.collapName { 
+writing-mode:tb-rl;
+font-size:16px;
+font-weight:600;
+z-index:100;
+color:#ddd;
+top:28%;
+left:914px;
+position:absolute;
+}
+#collapCk1 {
+    display:none;
+}
+#collapCk1:checked ~ .collapFrame { 
+left:0; 
+}
+#collapCk1:checked ~ .collapFrame .cnb {
+left:-100px;
+right:auto;
+}
+.collapFrame .closeBtn1 {
+transform:rotate(0deg);
+transition:0.7s;
+transition-delay:0.8s;
+background-size:32px;
+background-position:center center;
+}
+#collapCk1:checked ~ .collapFrame .closeBtn1 {
+transform:rotate(405deg); 
+}
+#sitemap {
+    position:fixed;
+    top:135px;
+    left:0;
+    width:100%;
+    height:
+}
