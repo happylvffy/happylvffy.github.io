@@ -212,7 +212,7 @@
     }
     #ft .molloo {
         width:auto;
-        height:auto;
+        height:80vh;
     }
     #ft .ftlogo {
         float:left;
@@ -226,12 +226,15 @@
         padding:10px;
         float:left;
     }
+    #ft .ftIco {
+        padding:0;
+    }
     #ft .ftIco li {
         float:none;
         width:260px;
-        height: 60px;
+        height:60px;
         margin:0 auto;
-        padding: 16px;
+        padding:4px;
     }
     #ft .ftTit {
         font-size: 0.85rem;
