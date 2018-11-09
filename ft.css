@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* 푸터 */
+#ft {
+    width:100%;
+}
+
+.tit {
+    padding: 50px;
+    text-align:center;
+    font-size:2.4em;
+    font-weight:300;
+    height:30%;
+    background: #222;
+    color:#fff;
+    box-sizing:border-box;
+    padding-top: 8%;
+}
+#ft .ftIco {
+    height:62%;
+    padding:10% 0;
+    box-sizing:border-box;
+}
+#ft .ftIco li {
+    float:left;
+    padding:10px;
+    width:200px;
+    height:200px;
+}
+#ft .ftlogo {
+    height:48px;
+    padding:20px;
+    margin:0 auto;
+}
+#ft .fas, #ft .far, #ft .fab {
+    font-size:3em;
+    margin-left:calc(calc(100% - 88px) / 2);
+    padding:20px;
+    box-sizing:border-box;
+}
+.fas.fa-map-marker-alt {
+    margin-left:calc(calc(100% - 78px) / 2);
+}
+#ft div:hover .ftlogo {
+    transition:.7s;
+    transform:rotateY(360deg);
+}
+#ft div:hover .fas {
+    color:#003399;
+    transition:.7s;
+    transform:rotateY(360deg);
+}
+#ft div:hover .far {
+    color:#003399;
+    transition:.7s;
+    transform:rotateY(360deg);
+}
+#ft div:hover .fab {
+    color:#003399;
+    transition:.7s;
+    transform:rotateY(360deg);
+}
+.ftTit, .ftCom {
+    text-align:center;
+    color: #333;
+}
+.ftTit {
+    font-size: 0.9em;
+    font-weight: 600;
+    line-height: 1.4em;
+    padding: 10px;
+}
+.ftCom {
+    font-size: 1.2em;
+}
+#ft .copy {
+    width:100%;
+    height: 8%;
+    background:#333;
+    color:#fff;
+    text-align:center;
+    font-weight:500;
+    font-size:1.2em;
+    line-height:78px;
+}
+/* 투탑 */
+.toTop {
+    display:none;
+    padding:15px;
+    position:fixed;
+    right:40px;
+    bottom:100px;
+    z-index:9999;
+    transition:.7s;
+}
+.fas.fa-chevron-circle-up {
+    display:block;
+    color:rgba(0,0,0,0.5);
+    font-size: 2.6em;

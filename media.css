@@ -1,0 +1,277 @@
+@charset "utf-8";
+@media screen and (max-width:767px) {
+/* 모바일 */
+.desk { display:none; }
+.mo { display:block; }
+
+.mohd {
+    width:100%;
+    padding:0 20px;
+    box-sizing:border-box;
+}
+.header.scroll {
+    height:60px;
+}
+.mohd .logo {
+        width:38px;
+        height:44px;;
+        margin:8px 0;
+        box-sizing:border-box;
+        background-size:contain;
+}
+#hd .mo.momenu{
+    position:fixed;
+    width:30px;
+    height:36px;
+    right:20px;
+    margin:12px 0;
+    cursor:pointer;
+    opacity:1;
+    transition:1.4s;
+    top:0;
+}
+#hd .mo.momenu:active {
+    transition:background .3s, transform .3s;
+}
+#hd .mo.momenu span {
+    width:30px;
+    height:2px;
+    float:right;
+    background:#fff;
+    margin:5px 0;
+    transition:background .3s, transform .3s;
+}
+#hd .mo.open {
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.9);
+    position:fixed;
+    top:0;
+    right:0;
+    transition:1s;
+    opacity:1;
+    display:none;
+}
+#hd .open .bars {
+    position:relative;
+}
+#hd .open .bars a {
+    position:absolute;
+    width:40px;
+    height:40px;
+    margin:5px 0;
+    right:15px;
+    top:6px;
+    transition:0.7s;
+}
+#hd .open .bars span {
+    width:40px;
+    height:2px;
+    float:right;
+    background:#fff;
+    margin:5px 0;
+    transition:background .3s, transform .3s;
+}
+#hd .open .bars span:first-child {
+    background:#fff;
+    transform: translate3D(0,13px,0) rotate(-45deg);
+}
+#hd .open .bars .none {
+    display:none;
+}
+#hd .open .bars span:last-child {
+    background:#fff;
+    transform: translate3D(0,0,0) rotate(45deg);
+}
+#hd .open #oMenu {
+    display:block;
+    margin:90% auto;
+    width:100%;
+    transform:translate3D(0,-50%,0);
+}
+#hd .open #oMenu li {
+    width:40%;
+    margin:15% auto;
+}
+#hd .open #oMenu p:hover {
+    color:#003399;
+    font-weight:600;
+}
+#hd .open #oMenu p {
+    color:#fff;
+    font-size:1.2rem;
+    text-align:justify;
+    text-justify:inter-word;
+}
+    #vs .momainLogo {
+        width:300px;
+        height:250px;
+        top:calc(calc(100% - 250px) / 2);
+        left:calc(calc(100% - 300px) / 2);
+    }  
+    #vs .momainLogo .mo {
+    width:300px;
+    margin:0 auto;
+    }
+    #vs .momainLogo .mo a {
+        padding:20px 30px;
+        box-sizing:border-box;
+    }
+    #vs .momainLogo .mo p {
+        font-size:1.4rem;
+        font-weight:200; 
+        color:#fff;
+        line-height:3.3rem;
+    }
+    #vs .mosvg-wrapper {
+        height:250px;
+        width:300px;
+    }
+    #vs .moshape {
+        height:250px;
+        width:300px;
+        stroke-width:4px;
+        stroke-dasharray:274 274;
+        stroke-dashoffset:-110;
+    }
+    .menuArea {
+    height:60px;
+    }
+    #con {
+        height:200%
+    }
+    #con p {
+    font-size:2rem;
+    }
+    #con ul {
+        width:100%;
+        height:200%;
+    }
+    #con li {
+        width:100%;
+        height:calc(calc(200% - 470px) / 16)
+    }
+    #con .conImg {
+        height:100%;
+        margin:0 auto;
+        background-size:120%;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+    #con .con1 .conImg {
+        background-image:url(./images/con1.png);
+    }
+    #con .con2 .conImg {
+        background-size:70%;
+        background-image:url(./images/con2.gif);
+        background-position:center 80%;
+    }
+    #con .con3 .conImg {
+        background-image:url(./images/con3.png);
+    }
+    #con .con4 .conImg {
+        background-image:url(./images/con4.png);
+    }
+    .tit {
+        padding:0;
+        font-size:1.4rem;
+        height:60px;
+        line-height:60px;
+    }
+    #pf li {
+        width:50%;
+        height:23%;
+    }
+    #pf .border.t-1 {
+        border-bottom:153px solid #082259;
+    }
+    #pf .border.t-2 {
+        border-bottom:153px solid #f76216;
+    }
+    #pf .border.t-3 {
+        border-bottom:153px solid #fcb831;
+    }
+    #pf .border.t-4 {
+        border-bottom:153px solid #2079b6;
+    }
+    #pf .border.t-5 {
+        border-bottom:153px solid #000;
+    }
+    #pf .border.t-6 {
+        border-bottom:153px solid #bae723;
+    }
+    #pf .border.t-7 {
+        border-bottom:153px solid #e60039;
+    }
+    #pf .border.t-8 {
+        border-bottom:153px solid #7fad52;
+    }
+    #pf .border {
+    border-left:188px solid transparent;
+    border-bottom:153px;
+    }
+    #ft .molloo {
+        width:auto;
+        height:auto;
+    }
+    #ft .ftlogo {
+        float:left;
+        height: 40px;
+        padding: 9px;
+    }
+    #ft .fas, #ft .far, #ft .fab {
+        font-size:2rem;
+        margin:0;
+        margin-left:0;
+        padding:10px;
+        float:left;
+    }
+    #ft .ftIco li {
+        float:none;
+        width:260px;
+        height: 60px;
+        margin:0 auto;
+        padding: 16px;
+    }
+    #ft .ftTit {
+        font-size: 0.85rem;
+        padding: 4px 0;
+    }
+    #ft .ftTxt {
+        float: left;
+        text-align:left;
+        padding: 4px 20px;
+    }
+    .ftTit, .ftCom {
+        text-align:left;
+    }
+    .ftCom {
+        font-size: 0.75rem;
+    }
+    #ft .copy {
+        height:60px;
+        font-size:.85rem;
+        line-height:60px;
+        position: fixed;
+        bottom:0;
+        z-index: -1;
+    }
+    
+    .toTop {
+    right:0;
+    bottom:0;
+    }
+}
+@media screen and (min-width:768px) and (max-width:959px) {
+    /* 태블릿 */
+}
+@media screen and (min-width:960px) and (max-width:1280px) {
+    /* 저해상도 데스크탑 */
+    .desk { display:block; }
+    .mo { display:none; }
+}
+@media screen and (min-width:1281px) {
+    /* 고해상도 데스크탑 */
+    .desk { display:block; }
+    .mo { display:none; }
+}

@@ -34,7 +34,30 @@ $(document).ready(function(){
            $("#vs ul li").eq(i).siblings().css("opacity", "0");
         });
     };
+    $("#hd .momenu").click(function(){
+        $("#hd .open").fadeIn(1000);
+        $("#hd .open").css("z-index","1");
+        $("#hd .mo.momenu").css("z-index","-1");
+    });
+    $("#hd .open .bars a").click(function(){
+        $("#hd .open").fadeOut(1000);
+        $("#hd .open").css("z-index","-1");
+        $("#hd .mo.momenu").css("z-index","1");
+    });
     
+    
+//    $("#hd .momenu").click(function(){
+//        $("#hd .open").css("opacity","1");
+//        $("#hd .momenu").css("opacity","0");
+//        $("#hd .momenu").css("z-index","-1");
+//        $("#hd .open .bars a").css("z-index","1");
+//    });
+//    $("#hd .open .bars a").click(function(){
+//        $("#hd .open").css("opacity","0");
+//        $("#hd .open").css("z-index","-1");
+//        $("#hd .momenu").css("opacity","1");
+//        $("#hd .momenu").css("z-index","1");
+//    });
     
 });
 /*

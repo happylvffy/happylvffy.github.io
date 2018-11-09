@@ -7,30 +7,59 @@
         <script src="html5shiv.js"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Noto+Sans+KR:100,300,400,500,700,900|Gloria+Hallelujah" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<!-- fabicon -->
     <link rel="shortcut icon" href="./images/fabicon.png" type="image/x-icon">
     <link rel="icon" sizes="16x16 32x32 48x48 64x64 72x72 96x96 114x114 128x128" href="./images/fabicon.png" type="image/x-icon">
     <link rel="apple-touch-icon-precomposed" href="./images/fabicon.png">
+<!-- css -->
     <link rel="stylesheet" href="./default.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./ft.css">
     <link rel="stylesheet" href="./ani.css">
+    <link rel="stylesheet" href="./media.css">
+<!-- jQuery -->
     <script src="./jquery-3.3.1.js"></script>
     <script src="./script.js"></script>
 </head>
-<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+<!--<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>-->
+<body>
 <div class="wrap">
 <header id="hd" class="header bounceInLeft animated" data-animate="bounceInLeft" data-duration="1s" data-delay="1s" style="animation-duration:1s; animation-delay:1s; visibility: visible;">
-   <div class="lloo">
+   <div class="lloo mohd">
     <a href="./index.html" class="logo"></a>
     <nav class="menu">
-        <ul class="gnb">
+        <ul class="gnb desk">
             <li><a href="./intro.html">INTRO</a></li>
-            <li><a href="#">WORKS</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="./works.html">WORKS</a></li>
+            <li><a href="./portfolio.html">PORTFOLIO</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
         </ul>
+<!-- mobile menu -->
+        <a class="mo momenu">
+           <span></span>
+           <span></span>
+           <span></span>
+        </a>
     </nav>
+    <div class="mo open">
+                <ul class="bars">
+                    <a class="close" href="#oMenu">
+                        <span></span>
+                        <span class="none"></span>
+                        <span></span>
+                    </a>
+                </ul>
+                <ul id="oMenu">
+                    <li><a href="./intro.html"><p style="letter-spacing: 0.42rem;">I N T R O</p></a></li>
+                    <li><a href="./works.html"><p style="letter-spacing: 0.31rem;">W O R K S</p></a></li>
+                    <li><a href="./portfolio.html"><p style="letter-spacing: 0.16rem;">PORTFOLIO</p></a></li>
+                    <li><a href="./contact.html"><p style="letter-spacing: 0.05rem;">C O N T A C T</p></a></li>
+                </ul>
+            </div>
    </div>
 </header>
 <article id="vs" class="page" style="height:100%">
@@ -49,11 +78,11 @@
         <div class="img">
         <img src="./images/vs04.jpg" alt="#"></div></li>
     </ul>
-	<div class="mainLogo">
-        <div>
+	<div class="mainLogo momainLogo">
+        <div class="desk">
            <svg width="100%" height="100%" viewBox="-80 10 600 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                 <path id="path1">
-                    <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="6s" begin="1s" repeatCount="indefinite" />
+                    <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="6s" begin="1s"  repeatCount="indefinite" />
                 </path>
                 <text font-size="3rem" text-align="center" font-family="Montserrat" font-weight="200" fill="#fff" letter-spacing="10rem">
                     <textPath xlink:href="#path1">WEB</textPath>
@@ -73,7 +102,7 @@
                 <path id="path3">
                     <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="6s" begin="3s" repeatCount="indefinite"/>
                 </path>
-                <text font-size="3rem" text-align="center" font-family="Montserrat" font-weight="500" fill="#fff" letter-spacing="6.4rem">
+                <text font-size="3rem" text-align="center" font-family="Montserrat" font-weight="500" fill="#fff" letter-spacing="6.2rem">
                     <textPath xlink:href="#path3">PARK</textPath>
                 </text>
             </svg>
@@ -83,14 +112,30 @@
                     <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="6s" begin="4s" repeatCount="indefinite" />
 <!--                    repeatCount="indefinite"-->
                 </path>
-                <text font-size="3rem" text-align="center" font-family="Montserrat" font-weight="500" fill="#fff" letter-spacing="6.4rem">
+                <text font-size="3rem" text-align="center" font-family="Montserrat" font-weight="500" fill="#fff" letter-spacing="6.2rem">
                     <textPath xlink:href="#path4">MINA</textPath>
                 </text>
             </svg>
         </div>
-        <div class="svg-wrapper">
+        <div class="mo">
+            <a href="./intro.html">
+                <div>
+                    <p style="letter-spacing:5.5rem">WEB</p>
+                </div>
+                <div>
+                    <p style="letter-spacing:1rem">DESIGNER</p>
+                </div>
+                <div>
+                    <p style="letter-spacing:3.5rem; font-weight:500">PARK</p>
+                </div>
+                <div>
+                    <p style="letter-spacing:3.5rem; font-weight:500">MINA</p>
+                </div>
+            </a>
+        </div>
+        <div class="svg-wrapper mosvg-wrapper">
       <svg height="400" width="500" xmlns="http://www.w3.org/2000/svg" >
-        <rect id="shape" height="400" width="500" />
+        <rect id="shape" class="moshape" height="400" width="500" />
       </svg>
     </div>
            
@@ -117,19 +162,20 @@
     <ul>
         <li class="con1"><a href="#">
                 <p class="conTit1">WEB</p>
-                <div class="conImg"><img src="./images/con1.png" alt="#"></div>
+                <div class="conImg"><img src="./images/con1.png" alt="#" class="desk"></div>
             </a></li>
         <li class="con2"><a href="#">
                 <p class="conTit2">MOBILE</p>
-            <div class="conImg"><img src="./images/con2.gif" alt="#"></div>
+            <div class="conImg"><img src="./images/con2.gif" alt="#" class="desk"></div>
             </a></li>
+        <div class="menuArea mo"></div>   
         <li class="con3"><a href="#">
                 <p class="conTit2">RESPONSIVE</p>
-            <div class="conImg"><img src="./images/con3.png" alt="#"></div>
+            <div class="conImg"><img src="./images/con3.png" alt="#" class="desk"></div>
             </a></li>
         <li class="con4"><a href="#">
                 <p class="conTit1">ADAPTIVE</p>
-            <div class="conImg"><img src="./images/con1.png" alt="#"></div>
+            <div class="conImg"><img src="./images/con4.png" alt="#" class="desk"></div>
             </a></li>
     </ul>
 </div>
@@ -245,40 +291,51 @@
 </section>
 <footer id="ft" class="page">
     <h2 class="tit">CONTACT</h2>
-    <ul class="ftIco lloo">
+    <ul class="ftIco lloo molloo">
         <li>
             <div>
                 <img src="./images/logo_blue.png" alt="#" class="ftlogo">
-                <p class="ftTit">NAME</p>
-                <p class="ftCom">박미나</p>
+                <div class="ftTxt">
+                    <p class="ftTit">NAME</p>
+                    <p class="ftCom">박미나</p>
+                </div>
             </div>
         </li>
         <li>
             <div>
                 <i class="fas fa-phone"></i>
-                <p class="ftTit">PHONE</p>
-                <p class="ftCom">011-400-0546</p>
+                <div class="ftTxt">
+                    <p class="ftTit">PHONE</p>
+                    <p class="ftCom">011-400-0546</p>
+                </div>
             </div>
         </li>
         <li>
             <div>
-                <i class="fas fa-map-marker-alt" style="margin-left:calc(calc(100% - 78px) / 2)"></i>
-                <p class="ftTit">ADDRESS</p>
-                <p class="ftCom">대전 유성구 유성대로654번길</p>
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="ftTxt">
+                    <p class="ftTit">ADDRESS</p>
+                    <p class="ftCom">대전 유성구 유성대로654번길</p>
+                </div>
             </div>
         </li>
         <li>
             <div>
                 <i class="far fa-envelope"></i>
-                <p class="ftTit">E-MAIL</p>
-                <p class="ftCom">happylvffy @gmail.com</p>
+                <div class="ftTxt">
+                    <p class="ftTit">E-MAIL</p>
+                    <p class="ftCom desk">happylvffy @gmail.com</p>
+                    <p class="ftCom mo">happylvffy@gmail.com</p>
+                </div>
             </div>
         </li>
         <li>
             <div>
                 <i class="fab fa-instagram"></i>
-                <p class="ftTit">INSTA</p>
-                <p class="ftCom">@happylvffy</p>
+                <div class="ftTxt">
+                    <p class="ftTit">INSTA</p>
+                    <p class="ftCom">@happylvffy</p>
+                </div>
             </div>
         </li>
     </ul>
