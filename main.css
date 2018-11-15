@@ -64,10 +64,20 @@
     top: calc(calc(100% - 400px) / 2);
     left: calc(calc(100% - 500px) / 2);
     z-index:30;
+    
+    -webkit-position:absolute;
+    -webkit-width:500px;
+    -webkit-height:400px;
+    -webkit-top: calc(calc(100% - 400px) / 2);
+    -webkit-left: calc(calc(100% - 500px) / 2);
+    -webkit-z-index:30;
+    
 }
 .mainLogo svg {
     width:500px;
     margin:0 auto;
+    -webkit-width:500px;
+    -webkit-margin:0 auto;
 }
 .svg-wrapper {
     margin-top:0;
@@ -80,6 +90,17 @@
     border-radius:3px;
     margin-left:5px;
     margin-right:5px;
+    
+    -webkit--webkit-margin-top:0;
+    -webkit--webkit-position:absolute;
+    -webkit--webkit-top:0;
+    -webkit--webkit-left:0;
+    -webkit--webkit-width:500px;
+    -webkit--webkit-height:500px;
+    -webkit--webkit-display:inline-block;
+    -webkit--webkit-border-radius:3px;
+    -webkit--webkit-margin-left:5px;
+    -webkit--webkit-margin-right:5px;
 }
 #shape {
     stroke-width:6px;
@@ -88,12 +109,24 @@
     stroke-dasharray:440 440;
     stroke-dashoffset: -220;
     transition:1s all ease;
+    
+    -webkit-stroke-width:6px;
+    -webkit-fill:transparent;
+    -webkit-stroke:#fff;
+    -webkit-stroke-dasharray:440 440;
+    -webkit-stroke-dashoffset: -220;
+    -webkit-transition:1s all ease;
     }
 .svg-wrapper:hover #shape {
     stroke-dasharray:50 0;
     stroke-width:3px;
     stroke-dashoffset:0;
     stroke:#05f;
+    
+    -webkit-stroke-dasharray:50 0;
+    -webkit-stroke-width:3px;
+    -webkit-stroke-dashoffset:0;
+    -webkit-stroke:#05f;
 }
 /*
 루피로고드로잉
@@ -149,12 +182,16 @@
 #con li {
     width:50%;
     height: calc(calc(100% - 80px) / 2);
+    -webkit-height: calc(calc(100% - 80px) / 2);
+    -moz-height: calc(calc(100% - 80px) / 2);
     float:left;
     position:relative;
 }
 #con li:hover .conImg {
     height:110%;
     transition:.7s;
+    -webkit-transition:.7s;
+    -moz-transition:.7s;
     margin-top:-5%;
 }
 #con .con2, #con .con3 {
@@ -169,6 +206,8 @@
 .con3.scroll,.con4.scroll {
     margin-top:0;
     transition:.7s;
+    -webkit-transition:.7s;
+    -moz-transition:.7s;
 }
 #con li a {
     height:100%;
@@ -182,6 +221,7 @@
 #con p.scroll {
     margin-left:20px;
     transition:.8s;
+    -webkit-transition:.8s;
 }
 .con1 p, .con3 p {
     margin-left:-345px;
@@ -195,6 +235,7 @@
 #con .conImg.scroll {
     margin-left:0;
     transition:1s;
+    -webkit-transition:1s;
 }
 #con .con1 div, #con .con3 div {
     margin-left:-1500px;

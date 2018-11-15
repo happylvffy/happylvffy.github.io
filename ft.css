@@ -37,7 +37,7 @@
     padding:20px;
     box-sizing:border-box;
 }
-.fas.fa-map-marker-alt {
+#ft .fas.fa-map-marker-alt {
     margin-left:calc(calc(100% - 78px) / 2);
 }
 #ft div:hover .ftlogo {

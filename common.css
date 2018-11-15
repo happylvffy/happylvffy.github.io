@@ -72,3 +72,14 @@
     font-size:1.2em;
     font-weight:600;
 }
+
+/* sub visual top Tit */
+.vtTit {
+    color:#fff;
+    font-size:2.4rem;
+    font-weight:600;
+    left:calc(calc(100% - 126.88px) / 2);
+    top:calc(calc(100% - 47px) / 2);
+    position:absolute;
+    z-index:100;
+}
