@@ -68,8 +68,8 @@
     background:none;
     color:#003399;
     height:auto;
-    padding-top:6%;
-    padding-bottom:4%;
+    padding-top: 5.5%;
+    padding-bottom: 3.5%;
 }
 #vs .table {
     position:relative;
@@ -109,19 +109,24 @@ td {
 
 /* skill */
 #skill .tit {
-    background:#003399;
-    color:#fff;
+    background:#fff;
+    color:#003399;
     height:auto;
+    padding: 10px;
+    padding-top: 7%;
+}
+#canvas {
+    height: 330px;
 }
 #canvas .pro {
-    margin: 0 10%;
+    margin:0 10%;
     width:auto;
-    height: 120px;
-    margin-top: 1.5%;
+    height:120px;
+    margin-top:1.5%;
 }
 #canvas .pro li {
     width:16.5%;
-    height: 100%;
+    height:100%;
     float:left;
 }
 #canvas .pro .pro1 {
@@ -165,7 +170,6 @@ td {
     flex-flow:row nowrap;
     margin: 0 10%;
 }
-
 .single-chart {
   width: 16.5%;
   justify-content: space-around;
@@ -220,4 +224,21 @@ td {
   fill: #555;
   font-size: 0.4rem;
   text-anchor: middle;
+}
+#skill .tit.ph {
+    color:#fff;
+    padding-top: 3%;
+    background:#003399;
+}
+#skill .phArea {
+    background:#003399;
+    width:100%;
+    height:inherit;
+}
+#skill .phArea li {
+    width:50%;
+    height:inherit;
+}
+#skill .phArea .position {
+    background:url(./images/position.jpg);
 }
