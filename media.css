@@ -153,6 +153,7 @@
     }
     #con .conImg {
         height:100%;
+        width:100%;
         margin:0 auto;
         background-size:120%;
         background-position:center;
@@ -225,6 +226,9 @@
         margin-left:0;
         padding:10px;
         float:left;
+    }
+    #ft .fas.fa-map-marker-alt {
+    margin-left:0;
     }
     #ft .ftIco {
         padding:0;
