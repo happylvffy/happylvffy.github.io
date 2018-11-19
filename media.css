@@ -149,7 +149,7 @@
     }
     #con li {
         width:100%;
-        height: inherit;
+        height:50%;
 /*        height:calc(calc(200% - 470px) / 16)*/
     }
     #con .conImg {
@@ -209,6 +209,12 @@
     #pf .border {
     border-left:188px solid transparent;
     border-bottom:153px;
+    }
+    #pf .pfTit {
+        font-size:0.85rem;
+    }
+    #pf .pfCom {
+        font-size:0.75rem;
     }
     #ft .molloo {
         width:auto;
