@@ -8,6 +8,7 @@
     width:100%;
     padding:0 20px;
     box-sizing:border-box;
+    height:60px;
 }
 .header.scroll {
     height:60px;
@@ -134,14 +135,19 @@
         stroke-dasharray:274 274;
         stroke-dashoffset:-110;
     }
-    .menuArea {
-    height:60px;
+    .menuArea.mo, .menuArea {
+        display:none;
     }
+/*
+    .menuArea {
+    height:60px;    .menuArea #con li { height:calc } 
+    }
+*/
     #con {
         height:200%
     }
     #con p {
-        font-size:2rem;
+        font-size:1.4rem;
         margin-left:20px;
     }
     #con ul {
@@ -150,7 +156,8 @@
     }
     #con li {
         width:100%;
-        height:calc(calc(200% - 470px) / 16)
+        height:12.5%;
+/*        height:calc(calc(200% - 470px) / 16)*/
     }
     #con .conImg {
         margin:0 auto;
@@ -187,7 +194,8 @@
     }
     #pf li {
         width:50%;
-        height:23%;
+        height:calc(calc(100% - 60px) / 4);
+/*        height:23%;*/
     }
     #pf .border.t-1 {
         border-bottom:153px solid #082259;

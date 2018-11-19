@@ -12,6 +12,15 @@ $(document).ready(function(){
     }
     return false;
     });
+    var mht=parseInt($(window).height());
+    $(window).scroll(function(){
+      var par=parseInt($(window).scrollTop());
+      if(par>=300){
+          $(".mohd").css("background-color","rgba(0,0,0,0.2)");
+      } else {
+          $(".mohd").css("background-color","rgba(0,0,0,0)");
+      }
+    });
     $("#vs, #vs ul").height(ht);
     var wd=parseInt($("#vs").width());
     var cnt=$("#vs ul li").length;

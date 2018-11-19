@@ -312,7 +312,7 @@
     float:left;
     background-position:center;
     position:absolute;
-    bottom:0;
+    bottom:calc(calc(100% - 128px ) / 2);
     left:0;
 }
 #pf .hover {
