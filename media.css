@@ -149,6 +149,7 @@
     }
     #con li {
         width:100%;
+        height: inherit;
 /*        height:calc(calc(200% - 470px) / 16)*/
     }
     #con .conImg {
