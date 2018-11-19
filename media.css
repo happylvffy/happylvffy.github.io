@@ -141,7 +141,8 @@
         height:200%
     }
     #con p {
-    font-size:2rem;
+        font-size:2rem;
+        margin-left:20px;
     }
     #con ul {
         width:100%;
@@ -149,14 +150,14 @@
     }
     #con li {
         width:100%;
-        height:25%;
-/*        height:calc(calc(200% - 470px) / 16)*/
+        height:calc(calc(200% - 470px) / 16)
     }
     #con .conImg {
         margin:0 auto;
         background-size:120%;
         background-position:center;
         background-repeat:no-repeat;
+        margin-left: 0;
     }
     #con .con1 .conImg {
         background-image:url(./images/con1.png);
