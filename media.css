@@ -149,11 +149,9 @@
     }
     #con li {
         width:100%;
-        height:calc(calc(200% - 470px) / 16)
+/*        height:calc(calc(200% - 470px) / 16)*/
     }
     #con .conImg {
-        height:100%;
-        width:100%;
         margin:0 auto;
         background-size:120%;
         background-position:center;
