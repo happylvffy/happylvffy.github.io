@@ -3,6 +3,11 @@
 #hd .gnb li a {
     color:#333;
 }
+.logo {
+    background: url(./images/logo_g.png);
+    background-repeat: no-repeat;
+    background-position: 85%;
+}
 /* visual */
 #vs {
     width:100%;

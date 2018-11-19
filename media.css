@@ -157,7 +157,13 @@
         background-size:120%;
         background-position:center;
         background-repeat:no-repeat;
-        margin-left: 0;
+        margin-left:0;
+    }
+    #con .con1 div, #con .con3 div,#con .con2 div, #con .con4 div {
+        margin-left:0;
+    }
+    .con3, .con4 {
+        margin-top:0;
     }
     #con .con1 .conImg {
         background-image:url(./images/con1.png);
