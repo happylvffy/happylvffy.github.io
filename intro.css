@@ -87,7 +87,7 @@ tr {
     height:40px;
 }
 td {
-    width:200px;
+    width: 10%;
 }
 #vs .cir {
     width:10px;
@@ -105,7 +105,7 @@ td {
     font-size:0.85rem;
 } 
 #vs .line {
-    width: 1410px;
+    width: 68%;
     height:3px;
     background: #003399;
     margin: 0 auto;
@@ -226,24 +226,71 @@ td {
   stroke: #6d407d;
 }
 .percentage {
-  fill: #555;
-  font-size: 0.4rem;
-  text-anchor: middle;
+  fill:#555;
+  font-size:0.4rem;
+  text-anchor:middle;
 }
 #skill .tit.ph {
     color:#fff;
-    padding-top: 3%;
+    padding-top:3%;
     background:#003399;
 }
 #skill .phArea {
     background:#003399;
     width:100%;
-    height:inherit;
+    height:50%;
 }
-#skill .phArea li {
+#skill .phArea .po,#skill .phArea .ho {
     width:50%;
-    height:inherit;
+    height:50%;
+    position:relative;
+    float:left;
 }
 #skill .phArea .position {
-    background:url(./images/position.jpg);
+    background:url(./images/position.png);
+    background-size:60%;
+    background-repeat:no-repeat;
+    background-position:center;
+    width:100%;
+    height:300px;
+    transition:.7s;
+}
+#skill .phArea .position:hover {
+    background-size:65%;
+}
+#skill .phArea .po span {
+    position:absolute;
+    top:calc(calc(100% - 10px) / 2);
+    left:calc(calc(100% - 273px) /2);
+    color:#fff;
+    font-size:2rem;
+    font-weight:900;
+    text-shadow:1px 1px 1px #333;
+}
+#skill .phArea .ho .hobby {
+    float:left;
+    width:100%;
+    height:300px;
+    padding:14% 10%;
+    box-sizing:border-box;
+}
+#skill .phArea .ho .hobby li {
+    width:33.3%;
+    float:left;
+    color:#fff;
+    font-size:1rem;
+    text-align:center;
+    padding:5%;
+    box-sizing:border-box;
+    font-weight:300;
+    transition:.7s;
+}
+#skill .phArea .ho .hobby .fas {
+    font-size:5rem;
+    color:#fff;
+    margin:10%;
+    transition:.7s;
+}
+#skill .phArea .ho .hobby .fas:hover {
+    transform:rotateY(180deg);
 }

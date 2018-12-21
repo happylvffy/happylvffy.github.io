@@ -3,14 +3,16 @@
 #ft {
     width:100%;
 }
-
+#ft  .tit {
+    background:#003399;
+}
 .tit {
     padding: 50px;
     text-align:center;
     font-size:2.4em;
     font-weight:300;
     height:30%;
-    background: #222;
+    background:#222;
     color:#fff;
     box-sizing:border-box;
     padding-top: 8%;
@@ -72,7 +74,7 @@
 .ftCom {
     font-size: 1.2em;
 }
-#ft .copy {
+.copy {
     width:100%;
     height: 8%;
     background:#333;
