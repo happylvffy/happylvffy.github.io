@@ -41,7 +41,7 @@
     width:50px;
     height:52px;
     background:url(./images/logo_w.png);
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     margin:14px 0;
     float:left;
     transition:.7s;
