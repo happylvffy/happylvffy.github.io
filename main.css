@@ -254,10 +254,11 @@
     margin:0 auto;
 }
 #con .con2 img {
-    height:100%;
-    margin:0 auto;
+    height: 90%;
+    margin: 10px auto;
     box-sizing:border-box;
     padding:40px;
+    margin-top: 40px;
 }
 /* 포트폴리오 */
 #pf {
@@ -312,7 +313,6 @@
     float:left;
     background-position:center;
     position:absolute;
-    bottom:calc(calc(100% - 128px ) / 2);
     left:0;
 }
 #pf .hover {

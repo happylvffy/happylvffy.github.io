@@ -197,6 +197,9 @@
         height:calc(calc(100% - 60px) / 4);
 /*        height:23%;*/
     }
+    #pf li img{
+    bottom:calc(calc(100% - 128px ) / 2);
+}
     #pf .border.t-1 {
         border-bottom:153px solid #082259;
     }
